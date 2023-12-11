@@ -6,6 +6,7 @@ import time
 import sys
 import psutil
 
+
 def move_cursor_up(lines):
     """Move the cursor up by a specified number of lines."""
     sys.stdout.write(f"\033[{lines}A")
@@ -56,5 +57,6 @@ def display_values(titles, generators, delay=2):
 # Usage:
 titles = ["CPU Usage", "CPU Temperature", "Load Average", "Memory Usage"]
 generators = [cpu_usage_generator(), cpu_temperature_generator(), load_average_generator(), memory_usage_generator()]
-display_values(titles, generators)
 
+# Start
+display_values(titles, generators)
