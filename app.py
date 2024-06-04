@@ -1,7 +1,3 @@
-#!/bin/python3
-
-# If you get an error, change the environment variable above
-
 import time
 import sys
 import psutil
